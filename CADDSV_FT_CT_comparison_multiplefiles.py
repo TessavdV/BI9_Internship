@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 """
-CADDSV FT and CT comparison
+CADDSV FT and CT comparison in Barplot
 """
 
 def amount_scored(input_files, samplename, output, score):
