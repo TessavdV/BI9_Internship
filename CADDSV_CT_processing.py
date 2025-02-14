@@ -3,6 +3,8 @@ import pandas as pd
 """
 Isoleert CT-O en CT-P uit alle CT-scores. 
 Isolates CT-O and CT-P score from all CT-scores for all output results. 
+
+Inputfile bevatten Variant, AnnotSV-score en alle gevonden CT-scores (en bijbehorende varianten). 
 """
 
 def calc_max_path(df):
@@ -126,8 +128,8 @@ def process_file(input_file, output_file):
 
 if __name__ == "__main__":
     samplename = "P50-G6"
-    input_file = "C:/Users/Tessa.vanderVeer@radboudumc.nl/Documents/RESULTS_FUCKYEAH/CADDSV_FTvsCT/" + samplename +  "_fullCADDSV_results.tsv"
-    output_file = "C:/Users/Tessa.vanderVeer@radboudumc.nl/Documents/RESULTS_FUCKYEAH/CADDSV_FTvsCT/" + samplename + "_CADDSV_CTCPandFT.tsv"
+    input_file = "FILEPATH_HERE" + samplename +  "_fullCADDSV_results.tsv"
+    output_file = "FILEPATH_HERE" + samplename + "_CADDSV_CTCPandFT.tsv"
 
     process_file(input_file, output_file)
 
